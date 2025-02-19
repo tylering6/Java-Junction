@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Java Junction - Gift Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <!-- Left: Logo -->
+          <div class="nav-left">
+            <a href="index.html" class="logo">
+              <img src="images/logo.png" alt="Java Junction Logo"  class="drink-img"/>
+            </a>
+          </div>
+          <!-- Center: Desktop Menu -->
+          <div class="nav-center desktop-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="rewards.html">Rewards</a></li>
+              <li><a href="giftcards.html" class="active">Gift Cards</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <!-- Right: Hamburger Icon for Mobile -->
+          <div class="nav-right">
+            <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile Fly-Out Menu -->
+        <div class="nav-menu mobile-menu" id="navMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="giftcards.html" class="active">Gift Cards</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </header>
+
+  <main>
+    <section id="giftcard-purchase">
+      <h2>Buy a Gift Card</h2>
+      <form id="giftcardForm">
+        <label for="recipientName">Recipient Name:</label>
+        <input type="name" id="recipientName" name="recipientName" required>
+
+        <label for="recipientEmail">Recipient Email:</label>
+        <input type="email" id="recipientEmail" name="recipientEmail" required>
+
+        <label for="giftMessage">Message:</label>
+        <textarea id="giftMessage" name="giftMessage" placeholder="Add a personal message"></textarea>
+
+        <button type="submit">Buy Gift Card</button>
+      </form>
+    </section>
+
+    <section id="giftcard-preview">
+      <h2>Email Preview</h2>
+      <div class="preview-box">
+        <p>Dear [Recipient],</p>
+        <p>You have received a Java Junction gift card!</p>
+        <p>[Personal message]</p>
+        <p>Please save this email to use the gift card.</p>
+        <p>Enjoy your coffee,</p>
+        <p>Java Junction Team</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Java Junction Coffee Chain</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
